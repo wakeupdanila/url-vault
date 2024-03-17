@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>URL Input Form</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+<h2>Submit New URL</h2>
+<form action="/submitUrl" method="post">
+    <label for="url">Enter URL:</label>
+    <input type="text" id="url" name="url" required>
+    <button type="submit">Submit</button>
+</form>
+
+<h2>Retrieve URL by ID</h2>
+<form action="/getUrl" method="get">
+    <label for="id">Enter ID:</label>
+    <input type="text" id="id" name="id" required>
+    <button type="submit">Retrieve</button>
+</form>
+</body>
+</html>
+
